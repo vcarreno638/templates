@@ -1,0 +1,1292 @@
+/* ========================================================================== 
+* Product Name: GV2:default
+* Author: Sean Kabanuk
+* Description: Customizable CSS for standard challenge template
+* Version: 1.0
+* Release date: 4/27/17
+  ========================================================================== */
+
+@import url("https://mywell.site/shared/challenges/templates/Gv2/gv2Base.css");
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+/* Section background colors */
+
+.background-color--base {
+    background-color: #fff;
+}
+
+.background-color--alt {
+    background-color: #EDEBDE;
+}
+
+section#page-content {
+    top: -560px;
+}
+
+/* Text colors */
+.page-master .challengename h1 {
+    color: #C4151B;
+    font-family: baloo;
+    font-size: 66px;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: white; */
+    color: #C4151B;
+    text-shadow: rgb(255, 255, 255) 10px 0px 0px, rgb(255, 255, 255) 9.95004px 0.998334px 0px, rgb(255, 255, 255) 9.80067px 1.98669px 0px, rgb(255, 255, 255) 9.55336px 2.9552px 0px, rgb(255, 255, 255) 9.21061px 3.89418px 0px, rgb(255, 255, 255) 8.77583px 4.79426px 0px, rgb(255, 255, 255) 8.25336px 5.64642px 0px, rgb(255, 255, 255) 7.64842px 6.44218px 0px, rgb(255, 255, 255) 6.96707px 7.17356px 0px, rgb(255, 255, 255) 6.2161px 7.83327px 0px, rgb(255, 255, 255) 5.40302px 8.41471px 0px, rgb(255, 255, 255) 4.53596px 8.91207px 0px, rgb(255, 255, 255) 3.62358px 9.32039px 0px, rgb(255, 255, 255) 2.67499px 9.63558px 0px, rgb(255, 255, 255) 1.69967px 9.8545px 0px, rgb(255, 255, 255) 0.707372px 9.97495px 0px, rgb(255, 255, 255) -0.291995px 9.99574px 0px, rgb(255, 255, 255) -1.28844px 9.91665px 0px, rgb(255, 255, 255) -2.27202px 9.73848px 0px, rgb(255, 255, 255) -3.2329px 9.463px 0px, rgb(255, 255, 255) -4.16147px 9.09297px 0px, rgb(255, 255, 255) -5.04846px 8.63209px 0px, rgb(255, 255, 255) -5.88501px 8.08496px 0px, rgb(255, 255, 255) -6.66276px 7.45705px 0px, rgb(255, 255, 255) -7.37394px 6.75463px 0px, rgb(255, 255, 255) -8.01144px 5.98472px 0px, rgb(255, 255, 255) -8.56889px 5.15501px 0px, rgb(255, 255, 255) -9.04072px 4.2738px 0px, rgb(255, 255, 255) -9.42222px 3.34988px 0px, rgb(255, 255, 255) -9.70958px 2.39249px 0px, rgb(255, 255, 255) -9.89993px 1.4112px 0px, rgb(255, 255, 255) -9.99135px 0.415807px 0px, rgb(255, 255, 255) -9.98295px -0.583741px 0px, rgb(255, 255, 255) -9.8748px -1.57746px 0px, rgb(255, 255, 255) -9.66798px -2.55541px 0px, rgb(255, 255, 255) -9.36457px -3.50783px 0px, rgb(255, 255, 255) -8.96758px -4.4252px 0px, rgb(255, 255, 255) -8.481px -5.29836px 0px, rgb(255, 255, 255) -7.90968px -6.11858px 0px, rgb(255, 255, 255) -7.25932px -6.87766px 0px, rgb(255, 255, 255) -6.53644px -7.56803px 0px, rgb(255, 255, 255) -5.74824px -8.18277px 0px, rgb(255, 255, 255) -4.90261px -8.71576px 0px, rgb(255, 255, 255) -4.00799px -9.16166px 0px, rgb(255, 255, 255) -3.07333px -9.51602px 0px, rgb(255, 255, 255) -2.10796px -9.7753px 0px, rgb(255, 255, 255) -1.12153px -9.93691px 0px, rgb(255, 255, 255) -0.123887px -9.99923px 0px, rgb(255, 255, 255) 0.87499px -9.96165px 0px, rgb(255, 255, 255) 1.86512px -9.82453px 0px, rgb(255, 255, 255) 2.83662px -9.58924px 0px, rgb(255, 255, 255) 3.77978px -9.25815px 0px, rgb(255, 255, 255) 4.68517px -8.83455px 0px, rgb(255, 255, 255) 5.54374px -8.32267px 0px, rgb(255, 255, 255) 6.34693px -7.72764px 0px, rgb(255, 255, 255) 7.0867px -7.0554px 0px, rgb(255, 255, 255) 7.75566px -6.31267px 0px, rgb(255, 255, 255) 8.34713px -5.50686px 0px, rgb(255, 255, 255) 8.8552px -4.64602px 0px, rgb(255, 255, 255) 9.27478px -3.73877px 0px, rgb(255, 255, 255) 9.6017px -2.79415px 0px, rgb(255, 255, 255) 9.83268px -1.82162px 0px, rgb(255, 255, 255) 9.96542px -0.830894px 0px;
+    position: relative;
+    top: -55px;
+    line-height: 70px;
+}
+
+.page-master .challengeContent h2 {
+    color: #6D6D62;
+    font-family: baloo;
+}
+
+.page-master h3 {
+    color: #6D6D62;
+}
+
+#page-content .challenge-data .cDescription .btnjoin {
+    background-color: #da7430;
+    color: #fff;
+}
+
+/* Title box */
+#titleBox {
+    margin-top: 164px;
+    border-radius: 9px;
+    margin-bottom: 96px;
+}
+
+.titleBox-color {
+    background-color: #636359;
+}
+
+.days-left {
+    text-align: center;
+}
+
+    .days-left p {
+        background: url(images/calendar_white.png) no-repeat;
+        background-position-y: center;
+        background-size: contain;
+        padding-left: 35px;
+        line-height: 30px;
+        width: 30%;
+        margin: 1em auto;
+    }
+
+.titleBox-color--top {
+    background-color: #fff;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    height: 8em;
+}
+
+.titleBox-color--txt p {
+    color: #fff;
+}
+
+@media (max-width: 415px) {
+    .titleBox-color, .titleBox-color--top {
+        background-color: rgba(52, 60, 62, .8);
+    }
+}
+
+/* Banner image */
+
+body.page-master {
+    background: #fff;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.challengewrapper.dashboardWidget {
+    border: none;
+}
+
+/* Misc skin overrides */
+.page-master #page-footer {
+    display: none;
+}
+
+.soi #page-content > .main-grid > div.grid-whole {
+    padding: 50px 0;
+}
+
+/* Progress bar div */
+.progress-wrapper {
+    position: relative;
+    background-color: #0063A5;
+    height: 250px;
+    overflow: auto;
+    color: #fff;
+    display: flex;
+}
+
+    .progress-wrapper .grid-third {
+        padding: 1em;
+    }
+
+.k-progressbar {
+    background-color: #004F83;
+    border-color: #004F83;
+    color: #fff;
+    height: 2em;
+    border-radius: 0.5em;
+    width: 95%;
+}
+
+    .k-progressbar .k-state-selected {
+        background-color: #B9DFE8;
+        border-color: #B9DFE8;
+        border-radius: 0.5em;
+    }
+
+.k-progress-status {
+    display: none;
+}
+
+#my-total-progress {
+    color: #B9DFE8;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.progress-banner {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+    .progress-bar-wrapper h3 {
+        color: #fff;
+        font-size: 2rem;
+        font-family: baloo;
+    }
+
+.icon-wrapper img {
+    height: auto;
+    max-width: 330px;
+    width: 100%;
+}
+
+.week {
+    position: relative;
+    height: 3em;
+    background-color: #0063A5;
+    color: #fff;
+    width: 15%;
+    line-height: 3em;
+    text-align: center;
+    margin-left: 15%;
+    font-family: baloo;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+    .week h3 {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scores-wrapper {
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,0.53);
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 9px;
+    padding: 1em;
+}
+
+.scores p {
+    background: url(images/calendar_white.png) no-repeat;
+    background-position-y: center;
+    background-size: 27px;
+    padding-left: 35px;
+    width: 100%;
+}
+
+#points-scores p {
+    background: url(images/vote-star-circle-white.svg) no-repeat;
+}
+
+#badges-scores p {
+    background: url(images/rewards-badge-1-white.svg) no-repeat;
+}
+
+#trophies-scores p {
+    background: url(images/rewards-trophy-5-white.svg) no-repeat;
+}
+
+/* Jump link styles */
+.challengewrapper #description {
+    margin-top: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+.challengeLinks-a, .challengeLinks-b {
+    margin-top: 0;
+    background-color: #EDEBDE;
+    text-align: center;
+}
+
+    .challengeLinks-a a div {
+        top: 4.86em;
+        left: -2px;
+        position: relative;
+        background-color: #0063A5;
+        color: #fff;
+        border-radius: 15px;
+        padding: 5px;
+        max-width: 120px;
+    }
+
+.margin-horizontals--lr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.jumpLink {
+    display: inline-block;
+    padding: 0;
+    width: 64px;
+    height: 58px;
+    margin-top: 5px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+.challengeLinks-a.margin-horizontals--lr {
+    height: 120px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.challengeLinks-a .jumpLink {
+    width: 120px;
+    height: 80px;
+    text-decoration: none;
+}
+
+.jumpLink-a {
+    background: url("images/learning_navigation_icon.png") left top no-repeat;
+    opacity: .7;
+}
+
+.jumpLink-b {
+    background: url("images/record_activity_navigation_icon.png") left top no-repeat;
+    opacity: .7;
+}
+
+.jumpLink-c {
+    background: url("images/leaderboard_navigation_icon.png") left top no-repeat;
+    opacity: .7;
+}
+
+.jumpLink-e {
+    background: url("images/badges_navigation_icon.png") left top no-repeat;
+    opacity: .7;
+}
+
+.jumpLink-d {
+    background: url("images/messages_navigation_icon.png") left top no-repeat;
+    opacity: .7;
+    margin-right: 0px;
+}
+
+/*.jumpLink-e {
+    padding-left: 50px;
+    padding-top: 5px;
+    margin-top: 50px;
+    max-height: 35px;
+}*/
+
+
+/* Tabstrip styling */
+.k-tabstrip .k-content.k-state-active {
+    background-color: #EDEBDE;
+    color: #231F20;
+}
+
+ul.k-tabstrip-items.k-reset {
+    background: #EDEBDE;
+}
+
+.k-tabstrip .k-item {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+span.k-link {
+    font-family: "Baloo", cursive;
+}
+
+.k-tabstrip-items .k-link {
+    font-size: .857em;
+    padding: 0.8em 2em;
+}
+
+#LearningTabStrip li.k-item.k-state-default {
+    border-radius: 10px;
+    margin: 1em;
+}
+
+#LearningTabStrip .k-tabstrip-items .k-state-default .k-link {
+    color: white;
+    background-color: #0063A5;
+}
+
+/* Selected & hover styles for tabstrips */
+#LearningTabStrip .k-tabstrip-items .k-state-hover .k-link,
+#LearningTabStrip .k-tabstrip-items .k-state-active .k-link {
+    background-color: #fff;
+    color: #0063A5;
+}
+
+/* Tracker styling 
+
+    TODO: Refactor CSS for custom trackers
+*/
+.w-tracker .counter div {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.w-addActivity #textBox {
+    width: 100%;
+}
+
+.custom-tracker-wrapper,
+.custom-tracker,
+.custom-progress {
+    min-height: 15em;
+    margin-bottom: 5em;
+}
+
+.custom-tracker-wrapper {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+    -moz-box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+    box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+}
+
+    .custom-tracker-wrapper img {
+        height: auto;
+        max-width: 155px;
+        margin: 0 auto;
+    }
+
+/* Calendar */
+/* ==========================================================================
+  Calendar Widget styles
+========================================================================== */
+.challengewrapper .w-calendar.horiz .calendar {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url(https://mywell.site/shared/images/datepicker-blue.png);
+}
+
+.challengewrapper .w-calendar.horiz .datetext span {
+    font-size: 26px;
+    font-family: "Baloo", cursive;
+    font-size: 40px;
+    font-size: 2.5rem;
+    color: #6d6d62;
+}
+
+.soi .calWidget {
+    position: absolute;
+    top: -50px;
+    margin-left: 0;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.soi .soi .calWidget:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body.page-master #calWrapper {
+    margin-left: 0;
+    margin-top: 40px;
+    width: auto;
+    z-index: 900;
+}
+
+.soi #cal {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+    .soi #cal.fixed {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        top: 0 !important;
+    }
+
+.soi .datetext {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.soi .w-calendar.horizfix .dt {
+    font-family: "Baloo", cursive;
+    font-size: 40px;
+    font-size: 2.5rem;
+    color: #6d6d62;
+}
+
+.soi .w-calendar.horiz .prev,
+.soi .w-calendar.horiz .next,
+.soi .w-calendar.horizfix .prev,
+.soi .w-calendar.horizfix .next {
+    width: 24px;
+    height: 24px;
+    background-image: none;
+    margin-right: 4px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+    .soi .w-calendar.horiz .prev,
+    .soi .w-calendar.horiz .next,
+    .soi .w-calendar.horiz .next:hover,
+    .soi .w-calendar.horizfix .next:hover,
+    .soi .w-calendar.horiz .prev,
+    .soi .w-calendar.horizfix .prev,
+    .soi .w-calendar.horiz .prev:hover,
+    .soi .w-calendar.horizfix .prev:hover {
+        background-position: unset;
+    }
+
+.soi .w-calendar.horiz .calendar,
+.soi .w-calendar.horizfix .calendar,
+.soi .w-calendar.horiz .calendar:hover,
+.soi .w-calendar.horizfix .calendar:hover {
+    float: none;
+    position: absolute;
+    top: -20px;
+    left: 48%;
+}
+
+.soi .w-calendar.horiz .next,
+.soi .w-calendar.horizfix .next,
+.soi .w-calendar.horiz .prev,
+.soi .w-calendar.horizfix .prev {
+    width: 200px;
+    height: 50px;
+    background-color: #D1D1D3;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+    -moz-box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+    box-shadow: 0px 6px 10px 5px rgba(33, 33, 33, 0.23);
+}
+
+.soi .w-calendar.horiz .next,
+.soi .w-calendar.horizfix .next {
+    float: right;
+}
+
+    .soi .w-calendar.horiz .next:hover,
+    .soi .w-calendar.horizfix .next:hover,
+    .soi .w-calendar.horiz .prev:hover,
+    .soi .w-calendar.horizfix .prev:hover {
+        background-color: #0063A5;
+    }
+
+    .soi .w-calendar.horiz .next:after,
+    .soi .w-calendar.horizfix .next:after,
+    .soi .w-calendar.horiz .prev:after,
+    .soi .w-calendar.horizfix .prev:after {
+        content: "Next Day";
+        display: block;
+        font-size: 18px;
+        font-size: 1.125rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+.soi .w-calendar.horiz .prev:after,
+.soi .w-calendar.horizfix .prev:after {
+    content: "Previous Day";
+}
+
+.soi .w-calendar.horiz .next:before,
+.soi .w-calendar.horizfix .next:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    height: 50px;
+    width: 35px;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 0;
+    background: #D1D1D3 url("https://mywell.site/Shared/templates/SpecialOlympicsInternational/Images/arrow-icon-right.png") 8px 7px no-repeat;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.soi .w-calendar.horiz .prev:before,
+.soi .w-calendar.horizfix .prev:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -5px;
+    height: 50px;
+    width: 35px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 10px;
+    background: #D1D1D3 url("https://mywell.site/Shared/templates/SpecialOlympicsInternational/Images/arrow-icon-left.png") 8px 7px no-repeat;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.soi .w-calendar.horiz .next:hover:before,
+.soi .w-calendar.horizfix .next:hover:before,
+.soi .w-calendar.horiz .prev:hover:before,
+.soi .w-calendar.horizfix .prev:hover:before {
+    background-color: #004F83;
+}
+
+
+/* Styling for left side of tracker */
+.custom-progress {
+    text-align: center;
+    background-color: #00AEEF;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.custom-tracker {
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #FFFFFF;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.show-progress-button {
+    color: #0063A5;
+    cursor: pointer;
+    width: 10em;
+    height: 3em;
+    line-height: 3em;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    margin: 0 auto;
+    margin-top: 0.35em;
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.46);
+}
+
+    .show-progress-button:hover {
+        box-shadow: 4px 3px 10px 0 rgba(0,0,0,0.46)
+    }
+
+.custom-tracker h2.widget-header.tracker-header {
+    display: none;
+}
+
+.custom-tracker table {
+    /* !important to override an inline style */
+    width: 100% !important;
+}
+
+    /* Hides the tracker icon */
+    .custom-tracker table > tbody > tr:nth-child(2) > td:nth-child(2) {
+        display: none;
+    }
+
+.custom-tracker tr, .custom-tracker td {
+    display: block;
+}
+
+    .custom-tracker td.counter {
+        width: 100%;
+    }
+
+.custom-tracker table > tbody > tr:nth-child(2) > td.counter > div.divItemCount {
+    display: none;
+}
+
+.custom-tracker table > tbody > tr:nth-child(2) > td.counter > div {
+    margin-left: 0;
+    padding-right: 0;
+    display: inline-block;
+}
+
+/*********** Tracker text ***********/
+td.points {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 20px !important;
+    padding-bottom: 1.6em;
+    padding-top: 2em;
+}
+
+    td.points b {
+        display: block;
+        font-size: 41px;
+        color: #6D6D62;
+        /*font-family: "Baloo", sans-serif;
+    line-height: 42px;*/
+    }
+
+/* CSS selector for "Add One" div */
+.custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(1) {
+    float: left;
+}
+
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(1) .imgUp,
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(1) .imgUpDis {
+        background-image: none;
+        width: 10em;
+        height: 3em;
+        border-radius: 9px;
+    }
+
+/* CSS selector for "Remove One" div */
+.custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) {
+    float: right;
+}
+
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) .imgDown,
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) .imgDownDis {
+        background-image: none;
+        background-color: white;
+        width: 10em;
+        height: 3em;
+        border-radius: 9px;
+    }
+
+/* Font styling for simple buttons */
+.imgUpText, .imgUpTextDis {
+    color: white;
+    line-height: 3em;
+    display: flex;
+    border-radius: 9px;
+}
+
+.imgUpText {
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.46);
+}
+
+.imgDownText, .imgDownTextDis {
+    color: white;
+    line-height: 3em;
+    display: flex;
+    border-radius: 9px;
+}
+
+.imgDownText {
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.46);
+}
+
+    .imgUpText:hover,
+    .imgDownText:hover {
+        box-shadow: 4px 3px 10px 0 rgba(0,0,0,0.46)
+    }
+
+.imgUpText > div,
+.imgUpTextDis > div {
+    display: inline-block;
+    text-align: center;
+}
+
+.imgDownText > div,
+.imgDownTextDis > div {
+    display: inline-block;
+    text-align: center;
+}
+
+/* '+' symbol portion styling on the 'ADD ONE' button */
+.imgUpText div:nth-child(1),
+.imgUpTextDis div:nth-child(1) {
+    width: 1em;
+    background-color: #004F83;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    font-size: 3em;
+    line-height: 0.85em;
+}
+
+/* text portion styling on the 'ADD ONE' button */
+.imgUpText div:nth-child(2),
+.imgUpTextDis div:nth-child(2) {
+    width: 9em;
+    background-color: #0063A5;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+/* '-' symbol portion styling on the 'REMOVE ONE' button */
+.imgDownText div:nth-child(1),
+.imgDownTextDis div:nth-child(1) {
+    color: #0063A5;
+    width: 1em;
+    background-color: #EDEBEB;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    font-size: 3em;
+    line-height: 0.85em;
+}
+
+/* text portion styling on the 'REMOVE ONE' button */
+.imgDownText div:nth-child(2),
+.imgDownTextDis div:nth-child(2) {
+    color: #0063A5;
+    width: 9em;
+    background-color: #FFFFFF;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+/* Eat tracker specific styling */
+#eat-tracker .custom-progress {
+    background-color: #EC008C;
+}
+
+/* Mind tracker specific styling */
+#mind-tracker .custom-progress {
+  background-color: #00bc9d;
+}
+
+/* Exercise tracker specific */
+#exercise-tracker .custom-progress {
+    background-color: #F9A01B;
+}
+
+#exercise-tracker .w-addActivity div {
+    color: black;
+}
+
+#exercise-tracker {
+    text-align: center;
+}
+
+    #exercise-tracker .custom-tracker {
+        position: relative;
+    }
+
+    #exercise-tracker .w-addActivity {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #exercise-tracker span.k-widget.k-numerictextbox {
+        display: block;
+        text-align: center;
+        width: 5em !important; /* !important to override kendo style */
+        margin: 0 auto;
+    }
+
+    #exercise-tracker > div.custom-tracker.grid-two-thirds > div > div:nth-child(2) > div:nth-child(1) {
+        display: none;
+    }
+    /* TODO one of these can be removed, one was being used on diary page before the loading was working correctly */
+    #exercise-tracker > div.custom-tracker.grid-two-thirds > div > div:nth-child(1) > div:nth-child(1),
+    #exercise-tracker > div.custom-tracker.grid-two-thirds > div > div:nth-child(3) > div:nth-child(1) {
+        display: none;
+    }
+
+.w-addActivity .addBtn {
+    vertical-align: middle;
+    margin-left: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3em;
+    width: 10em;
+}
+
+#exercise-tracker > div.custom-tracker.grid-two-thirds > div > div:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.widget.initialized.w-history {
+    float: right;
+}
+
+.HistoryImage {
+    /* Over writing the importants in the gv2Base */
+    padding: 1em !important;
+    margin: 0 !important;
+}
+
+/* Progress Popups */
+.goal-progress-wrapper {
+    display: block;
+    clear: both;
+    min-height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    overflow: auto;
+    max-width: 55em;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+.progress-header {
+    margin-bottom: 2em;
+}
+
+.progress-day-tile .padded-inner.content-box.center {
+    background-color: #EBEBEB;
+    color: #6D6D62;
+    font-family: "Baloo", cursive;
+    border-radius: 9px;
+}
+
+.progress-day-tile {
+    width: 14%;
+    display: inline-block;
+}
+
+.goal-met {
+    border: 4px solid #019883;
+}
+
+.goal-not-met {
+    border: 4px solid #E71D24;
+}
+
+.goal-future {
+    border: 4px solid #EBEBEB;
+}
+
+    .goal-future .amt {
+        visibility: hidden;
+    }
+
+.date {
+    font-weight: bold;
+    color: #403B40;
+}
+
+.amt {
+    font-size: 2em;
+    height: 1em;
+    line-height: 1.1em;
+}
+
+
+/* Badges & Trophies */
+.outer-line {
+    width: 16vw;
+    border-bottom: 4px solid #EBEBEB;
+}
+
+#badges span,
+.goal-progress-wrapper span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.badges-wrapper, .trophies-wrapper {
+    text-align: center;
+}
+
+span.badges-header h3 {
+    line-height: 2.3em;
+    margin: 0;
+    color: #fff;
+    font-family: "Baloo", cursive;
+}
+
+span.badges-header {
+    background-color: #636359;
+    color: #fff;
+    width: 15em;
+    height: 3.3em;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.53);
+    border-radius: 9px;
+}
+
+.badge {
+    background-color: #EDEBDE;
+    width: 30%;
+    margin: 1.66666%;
+    min-height: 21.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge img,
+.trophy img {
+    height: auto;
+    max-width: 155px;
+}
+
+.score {
+    height: 4em;
+    line-height: 4em;
+    color: #636359;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.glony {
+    overflow: auto;
+    box-shadow: 1px 7px 40px 10px rgba(33,33,33,0.23);
+    padding: 2em 0;
+    border-radius: 9px;
+}
+
+/* Custom Leaderboard */
+.custom-leaderboard .widget-header {
+    font-family: "Baloo", cursive;
+    text-transform: none;
+    color: #fff;
+    border: none;
+    background-color: #636359;
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.custom-leaderboard .header {
+    color: #fff;
+}
+
+.custom-leaderboard {
+    text-align: center;
+}
+
+.leaderboard-avatar {
+    position: relative;
+    top: 3em;
+}
+
+#page-content #progress .challengecommandlink, #page-content #progress .challengecommandlink:link, #page-content #progress .challengecommandlink:visited {
+    vertical-align: middle;
+    margin-left: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3em;
+    line-height: 3em;
+    width: 14em;
+    border-radius: 10px;
+    border-color: #0063A5;
+    color: #fff;
+    background-color: #0063A5;
+    margin: 0 auto;
+}
+
+/* Milestones */
+.milestone-left {
+    max-width: 40%;
+    background-color: #B3D235;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.milestone-right {
+    /* display: inline!important; */
+    text-align: center;
+    /*height: 100%;*/
+    background-color: #EEEEEE;
+    width: 60%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.milestone-left p {
+    text-align: center;
+    color: white;
+    font-family: Baloo;
+    font-size: 21px;
+    position: relative;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.milestone-wrapper h3.header {
+    color: #019783;
+    font-family: Baloo;
+    font-size: 47px;
+}
+
+.milestone-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/****** Media queries ******/
+/* ==========================================================================
+  Calendar Widget mobile styles
+========================================================================== */
+@media screen and (max-width: 1255px) {
+    .soi .datetext {
+        margin-top: 90px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .soi #cal {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .soi .w-calendar.horiz .prev,
+    .soi .w-calendar.horiz .next,
+    .soi .w-calendar.horizfix .prev,
+    .soi .w-calendar.horizfix .next {
+        float: none !important;
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .soi .w-calendar.horiz .next:before,
+    .soi .w-calendar.horizfix .next:before {
+        position: relative;
+        float: right;
+        right: 0;
+    }
+
+    .soi .w-calendar.horiz .prev:before,
+    .soi .w-calendar.horizfix .prev:before {
+        position: relative;
+        float: left;
+        left: 0;
+    }
+
+    .soi .w-calendar.horiz .next:after,
+    .soi .w-calendar.horizfix .next:after,
+    .soi .w-calendar.horiz .prev:after,
+    .soi .w-calendar.horizfix .prev:after {
+        padding-top: 15px;
+    }
+
+    .soi .datetext {
+        margin-top: 10px;
+    }
+
+    .soi .w-calendar.horiz .calendar, .soi .w-calendar.horizfix .calendar, .soi .w-calendar.horiz .calendar:hover, .soi .w-calendar.horizfix .calendar:hover {
+        top: -41px;
+        left: 48%;
+    }
+}
+
+@media only screen and (max-width: 3000px) {
+}
+
+@media (max-device-width: 1280px) and (min-device-width: 800px) {
+    #titleBox {
+        max-width: 360px;
+        min-height: 185px;
+    }
+
+    .days-left p {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    #titleBox {
+        max-width: 360px;
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15em;
+        border-radius: 9px;
+        margin-bottom: 1em;
+        display: block;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .custom-tracker {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .progress-day-tile {
+        width: 22%;
+    }
+
+    .badge {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .padding-horizontals--lr-10x {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #titleBox {
+        max-width: 360px;
+        min-height: 185px;
+    }
+
+    .days-left p {
+        width: 40%;
+    }
+
+    .custom-tracker-wrapper, .custom-tracker, .custom-progress {
+        margin-bottom: 0;
+    }
+
+    .custom-progress {
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 9px;
+    }
+
+    .custom-tracker {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 9px;
+    }
+
+    .custom-tracker-wrapper {
+        overflow: auto;
+        margin-top: 3em;
+    }
+
+    .challengeLinks-a.margin-horizontals--lr {
+        display: none;
+    }
+
+    .week {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .imgUpText div:nth-child(2), .imgUpTextDis div:nth-child(2),
+    .imgDownText div:nth-child(2), .imgDownTextDis div:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .custom-tracker {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(1) .imgUp,
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(1) .imgUpDis {
+        width: 8em;
+    }
+
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) .imgDown,
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) .imgDownDis {
+        width: 9em;
+    }
+
+    .custom-tracker table > tbody > tr:nth-child(2) > td.counter > div:nth-child(3) {
+        margin-right: 6px;
+    }
+
+    .outer-line {
+        width: 5vw;
+    }
+
+    .scores, .progress-banner {
+        display: none;
+    }
+
+    .progress-day-tile {
+        width: 33.3333%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+}
+@media only screen and (max-width: 480px){
+    .scores,
+    .progress-bar-wrapper {
+        display: flex;
+        width: 100%;
+    }
+    .scores-wrapper {
+        height: 100%;
+    }
+}
