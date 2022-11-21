@@ -1,0 +1,364 @@
+<!-- ==========================================================================
+* Product Name: GV2:default
+* Author: Sean Kabanuk
+* Description: Telerik template for standard challenges
+* Version: 1.0 MOD Victor
+* Release date: 4/27/17
+========================================================================== -->
+
+<div class="#=data.challengeClasses#"
+     data-challengeid="#=data.challengeId#" data-challenge-start="#= data.challenge.Start #" data-challenge-end="#= data.challenge.End #">
+
+    <!-- Join challenge overlay -->
+
+    <div class="overlay">
+        <div class="cDescription">
+            <div class="overlayClose k-window-actions" style="text-align:right">
+                <a role="button" href="\#" class="k-window-action k-link">
+                    <span role="presentation" class="k-icon k-i-close">Close</span>
+                </a>
+            </div>
+            <h1>#=data.challenge.Name#</h1>
+            <p>#=data.challenge.ShortDescription#</p>
+            <a class="btnjoin shadow-dark buttonTransition">#=data.resource.JoinChallenge#</a>
+        </div>
+    </div>
+
+    <!-- Hero banner -->
+
+    <div id="titleBox" class="shadow titleBox-color titleBox-color--txt">
+        <div class="titleBox-color--top padding-horizontals--lr padding-verticals">
+            <div class="challengename"><h1>#=data.challenge.Name#</h1></div>
+            <div class="clearFloat"></div>
+        </div>
+
+        <div class="days-left">
+            <div id="days-left"><p class="langEng"><span class="data">0</span> Days Left</p><p class="langFr"><span class="data">0</span> Jours Restants</p><p class="langEsp"> Falton <span class="data">0</span> Días</p></div>
+        </div>
+    </div>
+
+    <!-- Challenge nav links -->
+    <div class="clearFloat"></div>
+    <div class="week"></div>
+    <div class="progress-wrapper margin-horizontals--lr padding-horizontals--lr-10x">
+        <div class="progress-banner grid-third m-grid-half s-grid-whole">
+            <div class="icon-wrapper">
+                <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/progress_bar_image.png" />
+            </div>
+        </div>
+        <div class="progress-bar-wrapper grid-third m-grid-whole s-grid-whole">
+            <div class="progress-bar"></div>
+            <div><h3>My total progress <span id="my-total-progress">0%</span></h3></div>
+        </div>
+        <div class="scores grid-third m-grid-half s-grid-whole">
+            <div class="scores-wrapper">
+                <div id="points-scores"><p><span class="user-points">0</span>/<span class="total-points"></span> points</p></div>
+                <div id="badges-scores"><p><span class="badges-total">0</span>/137 badges</p></div>
+                <div id="trophies-scores"><p><span class="trophies-total">0</span>/8 trophies</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="clearFloat"></div>
+    <div class="challengeLinks-a margin-horizontals--lr">
+        <a href="\#learning" class="jumpLink jumpLink-a buttonTransition"><div><span class="langEng">Learning</span><span class="langFr">Apprendre</span><span class="langEsp">El Aprender</span></div></a>
+        <a href="\#trackers" class="jumpLink jumpLink-b buttonTransition"><div><span class="langEng">Record</span><span class="langFr">Enregistrer</span><span class="langEsp">Registrar</span></div></a>
+        <a href="\#badges" class="jumpLink jumpLink-e buttonTransition"><div><span class="langEng">Badges</span><span class="langFr">Enregistrer</span><span class="langEsp">Registrar</span></div></a>
+        <a href="\#progress" class="jumpLink jumpLink-c buttonTransition"><div><span class="langEng">Leaderboard</span><span class="langFr">Classement</span><span class="langEsp">Tabla de líderes</span></div></a>
+        <a href="\#messages" class="jumpLink jumpLink-d buttonTransition"><div><span class="langEng">Messages</span><span class="langFr">Messages</span><span class="langEsp">Mensajes</span></div></a>
+    </div>
+    <div class="clearFloat"></div>
+
+    <div id="platformContainer">
+
+        <!-- Description -->
+
+        <section id="description" class="challengeContent background-color--alt padding-horizontals--lr-10x clearFloat">
+            <div id="toggle" class="infoToggle">
+                <a class="toggle" onclick="$('.content', $(this).parent()).slideToggle(); $('.show, .hide', this).toggle();">
+                    <div class="show">#=data.resource.ShowDescription#</div>
+                    <div class="hide">#=data.resource.HideDescription#</div>
+                </a>
+
+                <div class="ChallengeInfoDescription content">
+                    <h2>Description</h2>
+
+                    <div class="datelabel">#=data.resource.Start#:</div>
+                    <div class="date">#=data.start#</div>
+                    <div class="datelabel">#=data.resource.End#:</div>
+                    <div class="date">#=data.end#</div>
+                    <div class="additioninfo">#=data.additionalInfo#</div>
+
+                    # if (data.challenge.IsPastProgressCutoff) { #
+                    <div class="challengeProgressEnded">#=data.resource.ChallengeProgressEnded#</div>
+                    # } else if (data.progressCutoff && data.progressCutoff != "") { #
+                    <div class="datelabel">#=data.resource.ChallengeProgressCutoff#:</div>
+                    <div class="date">#=data.progressCutoff#</div>
+                    # } #
+
+                    # if (!data.challenge.HasEnded && data.challenge.IsFull && !data.challenge.IsMember) { #
+                    <div class="challengefull"><h3>#=data.resource.ChallengeFull#</h3></div>
+                    # } #
+
+                    # if (data.challenge.HasEnded) { #
+                    <div class="challengeEnded"><h3>#=data.resource.ChallengeEnded#</h3></div>
+                    # } #
+                    <div class="widget">
+                        {
+                        "Type" : "ChallengeImage",
+                        "ChallengeId" : "#=data.challengeId#"
+                        }
+                    </div>
+                    <div>#=data.challenge.Description#</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning -->
+        <section id="learning" class="challengeContent background-color--alt padding-horizontals--lr-10x clearFloat">
+            <h2>Learning</h2>
+            <div id="LearningTabStrip"></div>
+        </section>
+
+        <!-- Trackers -->
+
+        <section id="trackers" class="challengeContent background-color--alt padding-horizontals--lr-10x">
+            <h2>Record Your Activity</h2>
+            <div class="widget">
+                {
+                "Type": "Calendar",
+                "Template": "horiz",
+                "DateFormat": "dddd, MMMM d"
+                }
+            </div>
+            
+            <!-- DRINK 5 -->
+            <div id="drink-tracker" class="custom-tracker-wrapper">
+                <div class="custom-progress grid-third m-grid-whole s-grid-whole">
+                    <img src="CoreHealth.Web.UI.ImageStore.axd?id=2bc660f9-f4f0-49c1-aac3-485b4fcc3883" />
+                    <div class="show-progress-button"><strong>Drink5 Progress</strong></div>
+                </div>
+                <div class="custom-tracker grid-two-thirds m-grid-whole s-grid-whole"></div>
+                <div class ="goal-progress-wrapper badges-wrapper padded" style="display:none;">
+                    <div class="progress-header">
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Drink5 Progress</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EAT 5 -->
+            <div id="eat-tracker" class="custom-tracker-wrapper">
+                <div class="custom-progress grid-third m-grid-whole s-grid-whole">
+                    <img src="CoreHealth.Web.UI.ImageStore.axd?id=6ad6af53-2735-48ee-9385-05e70bba72d6" />
+                    <div class="show-progress-button"><strong>Eat5 Progress</strong></div>
+                </div>
+                <div class="custom-tracker grid-two-thirds m-grid-whole s-grid-whole"></div>
+                <div class="goal-progress-wrapper badges-wrapper padded" style="display:none;">
+                    <div class="progress-header">
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Eat5 Progress</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 5 -->
+            <div id="exercise-tracker" class="custom-tracker-wrapper">
+                <div class="custom-progress grid-third m-grid-whole s-grid-whole">
+                    <img src="https://mywell.site/Shared/customers/SpecialOlympicsInternational/Fit5Icons_PhysicalActivity.png" />
+                    <div class="show-progress-button"><strong>Exercise5 Progress</strong></div>
+                </div>
+                <div class="custom-tracker grid-two-thirds m-grid-whole s-grid-whole">
+                    <div class="widget">
+                        {
+                        "Type": "AddActivity",
+                        "SetMaxMinutes": 480
+                        }
+                    </div>
+                    <div class="widget">
+                        {
+                        "Type": "History",
+                        "HistoryType": "activity",
+                        "AllowDelete": true
+                        }
+                    </div>
+
+                </div>
+                <div class="goal-progress-wrapper badges-wrapper padded" style="display:none;">
+                    <div class="progress-header">
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Exercise5 Progress</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MIND 5 -->
+            <div id="mind-tracker" class="custom-tracker-wrapper">
+                <div class="custom-progress grid-third m-grid-whole s-grid-whole">
+                    <img src="CoreHealth.Web.UI.ImageStore.axd?id=1a1d1503-dbb8-46e8-980a-f0db3366fa7a" />
+                    <div class="show-progress-button"><strong>Mind5 Progress</strong></div>
+                </div>
+                <div class="custom-tracker grid-two-thirds m-grid-whole s-grid-whole"></div>
+                <div class="goal-progress-wrapper badges-wrapper padded" style="display:none;">
+                    <div class="progress-header">
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Mind5 Progress</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Weight widget -->
+            # if (data.challenge.RequiresStartWeight && data.challenge.IsMember) { #
+            <div id="RequireWeight" class="RequireWeight grid-whole">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://mywell.site/shared/images/warn.png" />
+                        </td>
+                        <td>
+                            # if (data.challenge.ChallengeType == 8 || data.challenge.ChallengeType == 9) { #
+                            #=data.resource.StartingWeightWarnWellness#
+                            # } else { #
+                            #=data.resource.StartingWeightWarn#
+                            # } #
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            # } #
+
+
+            <!-- Personal statistics widget -->
+
+            <div class="challenge-data">
+
+                # if (data.challenge.ChallengeType == 1 || data.challenge.ChallengeType == 5 || data.challenge.ChallengeType == 6) { #
+                <div class="widget">
+                    {
+                    "Type" : "MeasurementChart",
+                    "Code" : "Weight",
+                    "DateOptions" : "days",
+                    "ChartHeight" : 250,
+                    "StartDate" : "#=data.challenge.Start#",
+                    "EndDate" : "#=corehealth.web.js.common.datetime.formatISO(data.calcEnd)#",
+                    "Title" : ""
+                    }
+                </div>
+                # } #
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section id="badges" class="challengeContent background-color--base padding-horizontals--lr-10x">
+            <h2>Badges and trophies</h2>
+            <div class="glony">
+
+                <div class="badges-wrapper">
+                    <div>
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Badges</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                    <div class="grid-third badge padded">
+                        <h4>For achieving your daily Eat5 goal</h4>
+                        <div>
+                            <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/eat5_badge.png" />
+                        </div>
+                        <div class="score"><span id="eat-badge">0</span>/56 collected</div>
+                    </div>
+                    <div class="grid-third badge padded">
+                        <h4>For achieving your daily Drink5 goal</h4>
+                        <div>
+                            <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/drink5_badge.png" />
+                        </div>
+                        <div class="score"><span id="drink-badge">0</span>/56 collected</div>
+                    </div>
+                    <div class="grid-third badge padded">
+                        <h4>For achieving your weekly Exercise5 goal</h4>
+                        <div>
+                            <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/exercise5_badge.png" />
+                        </div>
+                        <div class="score"><span id="exercise-badge">0</span>/25 collected</div>
+                    </div>
+                </div>
+                <div class="clearFloat"></div>
+                <div class="trophies-wrapper">
+                    <div>
+                        <span class="outer-line"></span>
+                        <span class="badges-header" aria-hidden="true" style="margin:10px 0"><h3>Trophies</h3></span>
+                        <span class="outer-line"></span>
+                    </div>
+                    <div class="grid-half">
+                        <div class="trophy">
+                            <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/trophy.png" />
+                        </div>
+                    </div>
+                    <div class="grid-half">
+                        <h4>For completing weekly goals</h4>
+                        <div class="score"><span class="trophies-total">0</span>/8 collected</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearFloat"></div>
+
+        </section>
+
+        <!-- Progress -->
+        <section id="progress" class="challengeContent background-color--base padding-horizontals--lr-10x">
+            <h2>Leaderboard</h2>
+
+            <div class="custom-leaderboard">
+                <h2 class="widget-header"><span class="header">Total results</span></h2>
+                <div class="avatar-wrapper grid-half">
+                    <div>
+                        <img src="https://www.konnected.ca/templates/soi/Fit5Challenge/images/laurel_plus_star.png"/>
+                    </div>
+                </div>
+                <div class="points grid-half">
+                    <h4>My points</h4>
+                        <br />
+                    <span class="score"><span class="user-points">0</span>pts</span>
+                </div>
+                <div class="clearFloat"></div>
+            </div>
+
+            # if (data.challenge.RankingType != 0 && data.challenge.RankingType != 3 ) { #
+            <a class="challengecommandlink" id="view-leaderboard" href="Report/Top.aspx?id=#=data.challengeId#">VIEW LEADERBOARD</a>
+            # } #
+        </section>
+
+        <!-- Messages -->
+        # if(data.challenge.MessageBoard.Enabled) { #
+        <section id="messages" class="challengeContent background-color--base padding-horizontals--lr-10x">
+            <h2>My Messages</h2>
+            <div class="messageBoard">
+                <div class="widget">
+                    {
+                    "Type": "MessageBoard",
+                    "objectId": "#=data.challengeId#",
+                    "objectType": 10,
+                    "pollingInterval": 10000,
+                    "messageCount": 3
+                    }
+                </div>
+            </div>
+        </section>
+        # } #
+
+
+        <!-- Leave challenge -->
+
+        <a class="btnleave challengecommandlink">#=data.resource.LeaveChallenge#</a>
+
+        <a href="\#" class="scrollToTop hvr-float"></a>
+
+        <div class="clearFloat"></div>
+    </div>
+
+    <!-- Script zone -->
+
+    <script language="javascript" src="https://www.konnected.ca/templates/soi/Fit5Challenge/template.js" type="text/javascript"></script>
+</div>
